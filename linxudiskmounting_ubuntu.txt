@@ -1,0 +1,22 @@
+dmesg | grep SCSI
+
+
+sudo fdisk /dev/sdc
+
+new partition:n
+
+primary:p
+
+number:1
+
+default for first sector
+
+default for last sector
+
+w
+
+sudo mkfs -t ext4 /dev/sdc1
+
+sudo mkdir /directoryName
+
+sudo mount /dev/sdc1 /data
