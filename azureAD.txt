@@ -1,0 +1,28 @@
+created a Win Server 2012 R2 Datacenter VM
+
+Server Manager --> Role and Feature --> Active Directory Domain Services & DNS
+
+Promote server as DC(set up your domain name)
+
+Active directory users and computers --> created Users(domain user,domain admin,enterprise admin)
+
+another VNET which is peered to the VNET that holds AD server
+
+DNS --> updated DNS server as Private IP of AD VM
+
+restarted all VM
+
+login to VM using Admin Creds--> this PC -->change workgroup 
+--> enter domain name & login with Domain Admin Credentials
+
+Restart VM and try login with AD User Account
+
+Azure AD:
+users -> created a user with global admin priviledge
+
+user came with a temporary password--> login.microsoft.com --> change pasword(store the password)
+
+azure AD --> Azure AD Connect--> download the tool and install it in local AD server.
+
+azure AD global admin credential and local AD enterprise admin credentials
+
